@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    /*SELETORES PERSONALIZADOS
+    # = id
+    . = class
+    : = Pseudo-Classe
+    :: = pseudo-elemento
+    > = cliudren
+    */
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        a{
+            color: red;
+            text-decoration: none;
+        }
+        a:visited{
+            color: red;
+            
+        }a:hover{
+            text-decoration: underline;
+        }
+        a:active{
+            color: aqua;
+        }
+        a::after{
+            content: '↢	';
+        }
+        a::before{
+            content: '↣';
+        }
+        .especial::before{
+            content: '◐';
+        }
+        .especial::after{
+            content: '◑';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://doceru.com/" target="_blank">Site da doceru</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1IHG8ozzKcDpLLm0YgfUR9gsRTC0ntlfZ" target="_blank">Meu drive de Filmes</a></li>
+        <li><a href="https://instagram.com/tiriostop?igshid=YTQwZjQ0NmI0OA==" target="_blank" class="especial">Meu Instagram</a></li>
+    </ul>
+</body>
+</html>
